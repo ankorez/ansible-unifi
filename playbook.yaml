@@ -1,0 +1,5 @@
+---
+- hosts: unifi
+  name: Install and Configure unifi-controller
+  roles:
+    - { role: unifi-controller } 

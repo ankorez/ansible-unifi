@@ -1,0 +1,13 @@
+---
+prerequisites_packages:
+  - ca-certificates
+  - apt-transport-https
+  - gnupg
+  - haveged
+main_packages:
+  - mongodb-org
+  - adoptopenjdk-8-hotspot
+  - unifi
+
+unifi_release: stable
+mongodb_version: "3.6"
