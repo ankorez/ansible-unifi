@@ -17,11 +17,13 @@
   ansible.builtin.apt_key:
     url: https://www.mongodb.org/static/pgp/server-{{ mongodb_version }}.asc
     state: present
+  become: yes
 
 - name: add apt-key openjdk
   ansible.builtin.apt_key:
     url: https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public
     state: present
+  become: yes
 
 - name: add apt-repo unifi
   ansible.builtin.apt_repository:
@@ -39,6 +41,7 @@
   ansible.builtin.apt_repository:
     repo: deb https://adoptopenjdk.jfrog.io/adoptopenjdk/deb buster main
     state: present
+  become: yes
 
 - name: update apt-get repo and cache
   apt: update_cache=yes force_apt_get=yes cache_valid_time=3600

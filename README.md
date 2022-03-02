@@ -8,7 +8,7 @@ Setup ansible locally.
 
 ### Install Ansible
 
-https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-debian
+See documentation [here](docs/install-ansible.md)
 
 ## Proxmox requirements for container
 
